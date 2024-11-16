@@ -12,7 +12,7 @@ public class CalcPi {
 			denominator=1+(i*2);
 			sum=sum+(numerator/denominator);
 		}
-		System.out.println("Pi according to java: "+Math.PI);
-		System.out.println("Pi, approximated: "+sum*4);
+		System.out.println("Pi according to Java: "+Math.PI);
+		System.out.println("Pi, approximated:	 "+sum*4);
 	}
 }

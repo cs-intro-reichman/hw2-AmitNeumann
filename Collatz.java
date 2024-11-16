@@ -6,6 +6,7 @@ public class Collatz {
 		if(mode.equals("v")) {
 		System.out.print(num+" ");
 		num=num*3+1;
+		count++;
 		System.out.print(num+" ");
 		while(num!=1) { // for row 1 
 			if(num%2==0) {

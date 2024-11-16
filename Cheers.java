@@ -19,7 +19,7 @@ public class Cheers {
                 }
            } System.out.println("What does that spell?");
            for (int k=0;k<rows;k++) {
-                System.out.println(name+" ! ! !");
+                System.out.println(name+"!!!");
            }
 
          }
