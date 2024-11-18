@@ -12,9 +12,9 @@ public class CalcPi {
 			denominator=1+(i*2);
 			sum=sum+(numerator/denominator);
 		}
-		System.out.printf("Pi according to Java: %.15g%n", Math.PI);
+		System.out.printf("Pi according to Java: %.15f%n", Math.PI);
 		if (n>0) {
-			System.out.printf("Pi, approximated:     %.15g%n", sum * 4);
+			System.out.printf("Pi, approximated:     %.15f%n", sum * 4);
 		} else 
 			System.out.println("Pi, approximated: cannot be done with n=0");
 	}
