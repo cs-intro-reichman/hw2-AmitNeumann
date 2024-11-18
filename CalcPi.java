@@ -3,7 +3,7 @@ public class CalcPi {
 	public static void main(String [] args) { 
 		int n=Integer.parseInt(args[0]),denominator;
 		double sum=0.0, numerator;
-		for(int i=0;i<n;i++) {
+		for(int i=0;i<n&&i!=0;i++) {
 			if(i%2==0) {
 				numerator=1.0;
 			} else {
@@ -13,6 +13,9 @@ public class CalcPi {
 			sum=sum+(numerator/denominator);
 		}
 		System.out.println("Pi according to Java: "+Math.PI);
-		System.out.println("Pi, approximated:	 "+sum*4);
+		if (n!=0) {
+			System.out.println("Pi, approximated:	 "+sum*4);
+		} else 
+			System.out.println("Pi, approximated: cannot be done with n=0");
 	}
 }
